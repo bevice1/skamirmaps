@@ -1,0 +1,39 @@
+[versions]
+activityCompose = "1.9.0"
+android = "8.5.2"
+androidPluginAnnotationV9 = "3.0.0"
+core-ktx = "1.13.1"
+
+# this specifies the JVM target
+jvmTarget = "17"
+kotlin = "2.0.21"
+compose-plugin = "1.6.11"
+kotlinx-coroutines-test = "1.7.3"
+kotlinx-serialization-json = "1.6.1"
+lifecycle-runtime-ktx = "2.7.0"
+lifecycleExtensions = "2.2.0"
+
+maplibreAndroidVersion = "11.1.0"
+atomicfu = "0.25.0"
+
+[bundles]
+
+[libraries]
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+android-plugin-annotation-v9 = { module = "org.maplibre.gl:android-plugin-annotation-v9", version.ref = "androidPluginAnnotationV9" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines-test" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
+
+lifecycle-extensions = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "lifecycleExtensions" }
+lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+
+maplibre-android = { module = "org.maplibre.gl:android-sdk", version.ref = "maplibreAndroidVersion" }
+material3 = { group = "androidx.compose.material3", name = "material3" }
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+androidApplication = { id = "com.android.application", version.ref = "android" }
+atomicfu = { id = "org.jetbrains.kotlinx.atomicfu", version.ref = "atomicfu" }
