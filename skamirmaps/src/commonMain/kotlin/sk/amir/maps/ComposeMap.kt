@@ -120,10 +120,9 @@ fun ComposeMap(
     }
 
   
-        Box(Modifier.matchParentSize()) {
+
             NativeComposeMap(Modifier.fillMaxSize(), uiSettings, mapState)
-        }
-    
+
 }
 
 
