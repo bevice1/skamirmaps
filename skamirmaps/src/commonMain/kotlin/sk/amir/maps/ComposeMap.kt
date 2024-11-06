@@ -119,12 +119,13 @@ fun ComposeMap(
         }
     }
 
-    Box(
-        modifier.fillMaxSize(),
-    ) {
-        NativeComposeMap(Modifier.fillMaxSize(), uiSettings, mapState)
-    }
+  
+        Box(Modifier.matchParentSize()) {
+            NativeComposeMap(Modifier.fillMaxSize(), uiSettings, mapState)
+        }
+    
 }
+
 
 @Composable
 internal expect fun NativeComposeMap(
