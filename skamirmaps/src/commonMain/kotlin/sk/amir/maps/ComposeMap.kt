@@ -119,31 +119,13 @@ fun ComposeMap(
         }
     }
 
-    Box(
-        modifier.fillMaxSize(),
-        contentAlignment = Alignment.BottomCenter
-    ) {
+  
         Box(Modifier.matchParentSize()) {
             NativeComposeMap(Modifier.fillMaxSize(), uiSettings, mapState)
         }
-        AttributionLink()
-    }
+    
 }
 
-@Composable
-private fun BoxScope.AttributionLink() {
-    ClickableText(
-        AnnotatedString("SKAMIR Maps"),
-        modifier = Modifier.align(Alignment.BottomCenter),
-        style = TextStyle(
-            textDecoration = TextDecoration.Underline,
-            fontWeight = FontWeight.SemiBold,
-            color = Color.Black.copy(alpha = 0.2f)
-        )
-    ) {
-        openURL("https://github.com/skamirmaps/skamirmaps")
-    }
-}
 
 @Composable
 internal expect fun NativeComposeMap(
