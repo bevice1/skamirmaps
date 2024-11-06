@@ -12,6 +12,7 @@ dependencyResolutionManagement {
         google()
 //        mavenLocal()
         mavenCentral()
+        maven ("https://jitpack.io"  )
     }
 }
 
