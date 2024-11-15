@@ -12,6 +12,7 @@ plugins {
     alias(libs.plugins.compose.compiler) apply false
     id("org.jetbrains.kotlin.native.cocoapods") version libs.versions.kotlin apply false
     id("project-report")
+    id("maven-publish")
 }
 
 tasks.register("clean", Delete::class) {
